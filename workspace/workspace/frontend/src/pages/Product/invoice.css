@@ -1,0 +1,78 @@
+.invoice-container {
+  width: 80%;
+  margin: 50px auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice-table th, .invoice-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f4f4f4;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.invoice-table tfoot td {
+  font-size: 18px;
+  text-align: left; /* 総金額のテキストを右揃え */
+}
+
+.invoice-table tfoot td strong {
+  font-weight: bold;
+}
+
+.generate-pdf-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.generate-pdf-button:hover {
+  background-color: #218c54;
+}
+
+/* テーブル列の幅を調整 */
+.invoice-table th:nth-child(1), 
+.invoice-table td:nth-child(1) {
+  width: 20%; /* 商品ID列の幅を設定 */
+}
+
+.invoice-table th:nth-child(2), 
+.invoice-table td:nth-child(2) {
+  width: 20%; /* 数量列の幅を設定 */
+}
+
+.invoice-table th:nth-child(3), 
+.invoice-table td:nth-child(3) {
+  width: 20%; /* 金額列の幅を設定 */
+}
+
+.invoice-table th:nth-child(4), 
+.invoice-table td:nth-child(4) {
+  width: 20%; /* 総金額列の幅を設定 */
+}
+
+.invoice-table th:nth-child(5), 
+.invoice-table td:nth-child(5) {
+  width: 20%; /* 総金額列の幅を設定 */
+}

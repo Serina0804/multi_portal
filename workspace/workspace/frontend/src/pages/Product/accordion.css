@@ -1,0 +1,27 @@
+/* accordion.css */
+.accordion {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+  }
+  
+  .accordion-content .subcategory {
+    margin-left: 20px;
+  }
+  
+  .accordion-content .subcategory-header {
+    font-weight: bold;
+  }
+  

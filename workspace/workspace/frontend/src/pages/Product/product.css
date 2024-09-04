@@ -1,0 +1,359 @@
+/* 全体のコンテナ */
+.product1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 40px auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+/* 商品画像エリア */
+.product1-image {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+.product1-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ボタン全体の配置 */
+.product1-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ボタン間のスペース */
+}
+
+/* カートに追加ボタン */
+.add-to-cart-button {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.cart-count {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}  
+
+.add-to-cart-button img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+/* 請求書作成ボタン */
+.create-invoice-button {
+  padding: 20px; /* カートに追加ボタンと同じサイズ */
+  background-color: #27ae60; /* 緑色の背景 */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-invoice-button:hover {
+  background-color: #218c54; /* 濃い緑色に変更 */
+  transform: translateY(-2px);
+}
+
+/* 下部コンテンツのコンテナ */
+.product1-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+  align-items: flex-start; /* 上部揃えに調整 */
+}
+
+/* コラム形式の投稿欄（左側） */
+.product1-column {
+  width: 48%;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.product1-column:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product1-column h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.product1-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product1-column textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.3s ease;
+}
+
+.product1-column textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.product1-column button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product1-column button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* 投稿一覧 */
+.product1-posts {
+  margin-top: 30px;
+}
+
+.product1-post {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.product1-post:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 投稿ヘッダー */
+.post-header, .reply-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.post-info, .reply-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-info strong, .reply-info strong {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.post-info span, .reply-info span {
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+/* 投稿内容に関するタグ */
+.post-tags {
+  margin-top: 12px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 6px;
+  margin-top: 6px;
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* 投稿アクション (いいねボタンなど) */
+.post-actions {
+  margin-top: 18px;
+}
+
+.post-actions button {
+  padding: 10px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.post-actions button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* リプライのスタイル */
+.post-replies {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.reply {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background-color: #f4f6f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+/* 商品説明エリア（右側） */
+.product1-description {
+  flex: 1; /* 残りのスペースをすべて使用 */
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* 高さを自動調整 */
+}
+
+.product1-description:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product1-description h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.product1-description ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.product1-description ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.product1-description p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* 検索枠の高さを調整 */
+.search-bar {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* 高さを指定して中央揃えを調整 */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* 横割りの枠を追加 */
+.horizontal-split-container {
+  display: flex;
+  gap: 20px; /* 枠の間にスペースを追加 */
+  margin-top: 20px;
+}
+
+.horizontal-split-box {
+  flex: 1;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  height: 300px; /* 固定の高さを設定 */
+}
+
+.horizontal-split-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+.horizontal-split-box h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.horizontal-split-box p {
+  font-size: 16px;
+  color: #7f8c8d;
+}

@@ -1,0 +1,137 @@
+.post-report-container {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.post-report-content {
+    width: 80%; /* Headerの幅に合わせる */
+    max-width: 1200px; /* 必要に応じて最大幅を設定 */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* 左右セクションの間に余白を追加 */
+    padding: 0 20px; /* 左右に余白を持たせる */
+}
+
+.left-section, .right-section {
+    width: 48%; /* 左右セクションの幅を調整 */
+}
+
+.input-section,
+.feedback-button-section,
+.score-display-section,
+.feedback-display-section,
+.sample-report-section {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.input-section textarea,
+.feedback-button-section textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 120px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.input-section textarea:focus,
+.feedback-button-section textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.feedback-button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback-button-section button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-button-section button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.create-report-button {
+    background-color: #27ae60;
+}
+
+.create-report-button:hover {
+    background-color: #218c54;
+}
+
+.score-display-section, .sample-report-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.score-box, .sample-report-box {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.feedback-display-section {
+    padding: 25px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feedback-display-section h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+.feedback-display-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.alert-bar {
+    width: 100%;
+    background-color: #ffcc00; /* 警告色 */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    position: fixed; /* ヘッダーの下またはページの上部に固定 */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* 他の要素より前面に表示 */
+  }
+  
