@@ -80,7 +80,7 @@
         - パラメータ　temperature == 0
             - 毎回一貫した評価基準で評価可能
 
-デモ動画：
+デモ動画：https://youtu.be/867n3mQATXk
 
 #### 商品一覧ページ
 
@@ -91,5 +91,7 @@
     - Q.  〇〇の商品はどこのカテゴリー？
     - A.  「IoT」のカテゴリ
 
-デモ動画：
+デモ動画：https://youtube.com/shorts/5pFW1trZkxU?feature=share
+
+
 
