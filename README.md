@@ -32,7 +32,7 @@
 
 ## ER図
 
-ER図：<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" src="https://github.com/user-attachments/assets/1cba031d-4c8e-47cf-8df4-09f1c68f1359">
+<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" src="https://github.com/user-attachments/assets/1cba031d-4c8e-47cf-8df4-09f1c68f1359">
 
 - 合計**12**テーブルを作成
 - 全テーブルで第三正規化を目指す
@@ -42,13 +42,14 @@ ER図：<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" s
 
 ## 機能
 
-ページ遷移図：<img width="557" alt="スクリーンショット 2024-09-04 16 44 45" src="https://github.com/user-attachments/assets/51d328ad-cf68-47e7-bc4f-fcf88b22634a">
+**ページ遷移図**
+<img width="557" alt="スクリーンショット 2024-09-04 16 44 45" src="https://github.com/user-attachments/assets/51d328ad-cf68-47e7-bc4f-fcf88b22634a">
 
 ### 各ページ機能
 
 #### ログインページ
 
-ページ：<img width="128" alt="スクリーンショット 2024-09-04 16 46 52" src="https://github.com/user-attachments/assets/203053cf-af4e-4d1e-b31d-27a1bbb106ed">
+<img width="128" alt="スクリーンショット 2024-09-04 16 46 52" src="https://github.com/user-attachments/assets/203053cf-af4e-4d1e-b31d-27a1bbb106ed">
 
 - ログイン時のエラーメッセージでユーザIDかパスワードかを特定できないようにし、セキュリティを強化
 - データベースにはパスワード原文でなく、ハッシュ化して保存
@@ -56,7 +57,7 @@ ER図：<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" s
 
 #### プロフィールページ
 
-ページ：<img width="213" alt="スクリーンショット 2024-09-04 16 48 49" src="https://github.com/user-attachments/assets/abb416f7-d8d0-48a8-a279-a62798e60226">
+<img width="213" alt="スクリーンショット 2024-09-04 16 48 49" src="https://github.com/user-attachments/assets/abb416f7-d8d0-48a8-a279-a62798e60226">
 
 機能：レビュー投稿、日報投稿のタグ生成
 - LLM(GPT-4o-mini)によるタグ生成
@@ -66,7 +67,7 @@ ER図：<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" s
 
 #### 日報生成ページ
 
-ページ：<img width="208" alt="スクリーンショット 2024-09-04 16 52 12" src="https://github.com/user-attachments/assets/be2aabc6-4010-46a7-b8fd-7bffa99d8c1c">
+<img width="208" alt="スクリーンショット 2024-09-04 16 52 12" src="https://github.com/user-attachments/assets/be2aabc6-4010-46a7-b8fd-7bffa99d8c1c">
 
 機能：日報作成のサポート（日報サンプルの選択、作成日報の評価・フィードバック）
 - LLM(GPT-4o-mini)の使用
@@ -83,7 +84,7 @@ ER図：<img width="389" alt="スクリーンショット 2024-09-04 16 40 08" s
 
 #### 商品一覧ページ
 
-ページ：<img width="164" alt="スクリーンショット 2024-09-04 16 58 31" src="https://github.com/user-attachments/assets/530191e9-66ec-4304-9926-1e994edd338b">
+<img width="164" alt="スクリーンショット 2024-09-04 16 58 31" src="https://github.com/user-attachments/assets/530191e9-66ec-4304-9926-1e994edd338b">
 
 機能：商品一覧の表示、チャットボットによる商品レコメンドシステム
 - 特定の商品の検索をサポート
