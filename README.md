@@ -42,7 +42,7 @@
 
 ## 機能
 
-**ページ遷移図**
+### ページ遷移図
 <img width="557" alt="スクリーンショット 2024-09-04 16 44 45" src="https://github.com/user-attachments/assets/51d328ad-cf68-47e7-bc4f-fcf88b22634a">
 
 ### 各ページ機能
